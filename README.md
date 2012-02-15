@@ -6,12 +6,13 @@ Use various financial optimization models to construct portfolios from a selecte
 2. Set the parameters in *build_pf.m*
 3. Run *build_pf.m*
 
-##Status
+##Status:
 Currently contains the following models:
-* MVO
-* Mean-Absolute Deviation
+
+1. MVO
+2. Mean-Absolute Deviation
 
 More models will be added in future updates.
 
-##Dependencies
+##Dependencies:
 Stock data are retrieved from Finance Yahoo using *hist_stock_data.m* by Josiah Renfree. *hist_stock_data.m* is included in this package.
