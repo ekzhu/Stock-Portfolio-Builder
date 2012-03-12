@@ -1,5 +1,5 @@
 ##Introduction
-Use various financial optimization models to construct portfolios from a selected group of stocks.
+Use various financial optimization models to construct portfolios from a selected group of stocks. The optimization model should be used for education purpose only. No responsibility for loss incurred when applied to real-world market trading.
 
 ##Usage:
 1. Select your stocks and put them in a separate text file, separate stocks by new lines. 
