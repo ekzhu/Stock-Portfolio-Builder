@@ -20,7 +20,11 @@ for i=1:length(stocks)
     
     % Calculate all rate of return of stock i
     for j=1:num_period
-        stocks(i).ror(j) = (stocks(i).Open(j+1) - stocks(i).Open(j))/stocks(i).Open(j);
+        % Total Returns
+        I1 = stocks(i).Open(j)/stocks(i).Close(j);
+        I2 = stocks(i).Open(j+1)/stocks(i).Close(j+1);
+        % Rate of returns
+        stocks(i).ror(j) = (I2 - I1)/I1;
     end
     rors(:,i) = stocks(i).ror;
     
@@ -81,4 +85,4 @@ end
 plot(Volatility_MVO, R, '*', Volatility_LP, R, '.');
 xlabel('Volatility');
 ylabel('Subject Return');
-axis([0 0.005 -0.1 0.1]);
+% axis([0 0.005 -0.1 0.1]);
